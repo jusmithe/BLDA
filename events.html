@@ -24,7 +24,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </head>
+  </head>
 
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -54,19 +54,25 @@
 
     <div class="container">
       <div id='primary-content' class='col-md-10 col-md-offset-1'>
-        <h1>About BLDA</h1>
-        <p>The Ballroom and Latin Dance Association is run as a University of Chicago Registered Student Organization. We teach weekly lessons each academic quarter (three levels of salsa, plus one or two special classes like chacha, mambo, or bachata) and we also organize monthly DJed dances at Seven Ten Lanes, 1055 E 55th St, as well as the occasional special dance or workshops. </p>
-
-        <p>Our goal is to promote the love of Latin dance on campus and in the neighborhood, and to provide the University of Chicago/Hyde Park community with affordable dance opportunities, so our lessons are $4-$5 and our dances are always free. </p>
-
-        <p>Find us <a href="http://www.facebook.com/bldauchicago">here</a> on facebook for updated information. </p>
-
-        <div class="footer">
-          <p class='pull-right'>
-            &copy; Ballroom and Latin Dance Association 2014
-          </p>
-        </div>
+        <h1>
+          <small id='event-count'>17</small>
+          Events
+        </h1>
+        <p>Recent and upcoming hack nights, with links to each event's video livestream, projects, people, and data. <br/></p>
+        <table id='open-data-table' class='table table-striped'>
+          <thead>
+            <tr>
+              <th class='api-title'>Title</th>
+              <th>Category</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
       </div>
     </div>
+    <script src="/js/jquery.csv-0.71.min.js"></script>
+    <script src="/lib/resources.js"></script>
   </body>
 </html>
