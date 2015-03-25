@@ -15,15 +15,20 @@
     <link href="css2/bootstrap.min.css" rel="stylesheet">
     <link href="css2/custom.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js2/ie-emulation-modes-warning.js"></script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="js2/jquery-1.10.1.min.js"></script>
+    <script src="js2/bootstrap.min.js"></script>
+
+    <script src="js2/moment.min.js"></script>
+    <script src="js2/jquery.dataTables.min.js"></script>
+    <script src="js2/jquery.dataTables.sorting.js"></script>
+    <script src="js2/jquery.address.js"></script>
+    <script src="js2/mustache.js"></script>
   </head>
 
   <body>
@@ -55,15 +60,17 @@
     <div class="container">
       <div id='primary-content' class='col-md-10 col-md-offset-1'>
         <h1>
-          <small id='event-count'>17</small>
+          <small id='data-count'></small>
           Events
         </h1>
-        <p>Recent and upcoming hack nights, with links to each event's video livestream, projects, people, and data. <br/></p>
-        <table id='open-data-table' class='table table-striped'>
+        <p>Recent and upcoming practices. <br/></p>
+        <table id='event-table' class='table table-striped'>
           <thead>
             <tr>
-              <th class='api-title'>Title</th>
-              <th>Category</th>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Location</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -72,7 +79,7 @@
         </table>
       </div>
     </div>
-    <script src="/js/jquery.csv-0.71.min.js"></script>
-    <script src="/lib/resources.js"></script>
+    <script src="js2/jquery.csv-0.71.min.js"></script>
+    <script src="lib/resources.js"></script>
   </body>
 </html>
