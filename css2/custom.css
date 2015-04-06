@@ -83,6 +83,12 @@ a, a:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 .jumbotron .btn {
+  background-color: #767676;
+  font-size: 21px;
+  padding: 14px 24px;
+}
+.jumbotron .btn:hover {
+  background-color: #800000;
   font-size: 21px;
   padding: 14px 24px;
 }
